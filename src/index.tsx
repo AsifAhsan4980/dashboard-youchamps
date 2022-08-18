@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { store } from './store';
-// scroll bar/
 import 'simplebar/src/simplebar.css';
 
 import { Amplify } from "aws-amplify";
@@ -25,7 +24,7 @@ root.render(
   <React.StrictMode>
       <ReduxProvider store={store}>
           <BrowserRouter basename="/">
-              <App />
+              <App/>
           </BrowserRouter>
       </ReduxProvider>
   </React.StrictMode>
